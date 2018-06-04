@@ -1,8 +1,7 @@
 let grayArea = document.getElementById('close-popup')
 let popup = document.getElementById('popup')
 let cruz = document.getElementById('cruz')
-let map = document.getElementById('map')
-console.log(map)
+
 
 grayArea.addEventListener('click', () => {
     closePopup()
@@ -19,3 +18,7 @@ closePopup = () => {
         grayArea.style.display = 'none'
     }, 300);
 }
+
+layer.on('featureClick', function(e, latlng, pos, data, layer) {
+    console.log("mouse clicked polygon with data: " + data);
+  });
