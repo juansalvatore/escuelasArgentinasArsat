@@ -36,7 +36,7 @@ nav i {
   height: 100%;
   background-color: #646464;
   opacity: 0.4;
-  z-index: 15;
+  z-index: 22;
 }
 .popup {
   position: absolute;
@@ -89,11 +89,14 @@ nav i {
   font-weight: 600;
   font-size: 23px;
   margin-top: 30px;
+  text-align: center;
 }
 .popup-p {
   position: relative;
   font-family: Roboto, sans-serif;
   margin-top: 20px;
+  display: flex;
+  text-align: center;
 }
 .info-container {
   display: -webkit-box;
@@ -114,6 +117,7 @@ nav i {
   font-weight: 500;
   width: 80px;
   margin-left: 15px;
+  color: #999999 !important;
 }
 .division-bar-popup {
   width: 2px;
@@ -324,6 +328,10 @@ iframe {
 .por-conectar {
   display: flex;
   align-items: center;
+}
+
+.light-blue {
+  color: #03a9f4 !important;
 }
 
 @media (max-width: 570px) {
